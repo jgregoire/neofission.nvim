@@ -101,6 +101,8 @@ local function get_colors()
     dark_green = palette.dark_green,
     dark_aqua = palette.dark_aqua,
     gray = palette.gray,
+    light_green = palette.light_green,
+    bright_red = palette.bright_red,
   }
 
   return color_groups
@@ -165,10 +167,10 @@ local function get_groups()
     neofissionAquaBold = { fg = colors.aqua, bold = config.bold },
     neofissionOrange = { fg = colors.orange },
     neofissionOrangeBold = { fg = colors.orange, bold = config.bold },
-    neofissionRedSign = config.transparent_mode and { fg = colors.red, reverse = config.invert_signs }
-        or { fg = colors.red, bg = colors.bg0, reverse = config.invert_signs },
-    neofissionGreenSign = config.transparent_mode and { fg = colors.green, reverse = config.invert_signs }
-        or { fg = colors.green, bg = colors.bg0, reverse = config.invert_signs },
+    neofissionRedSign = config.transparent_mode and { fg = colors.bright_red, reverse = config.invert_signs }
+        or { fg = colors.bright_red, bg = colors.bg0, reverse = config.invert_signs },
+    neofissionGreenSign = config.transparent_mode and { fg = colors.light_green, reverse = config.invert_signs }
+        or { fg = colors.light_green, bg = colors.bg0, reverse = config.invert_signs },
     neofissionYellowSign = config.transparent_mode and { fg = colors.yellow, reverse = config.invert_signs }
         or { fg = colors.yellow, bg = colors.bg0, reverse = config.invert_signs },
     neofissionBlueSign = config.transparent_mode and { fg = colors.blue, reverse = config.invert_signs }
