@@ -1,3 +1,16 @@
+# Goals:
+
+* Increase contrast, carefully.
+* Add some high-contrast accents from existing colors.
+* Add a nice green to be used sparingly.
+* Add one more color to be used sparingly. Perhaps plum.
+* Use consistent shades across colorschemes for different apps.
+* Adhere to certain color conventions:
+    * Red for errors and negative results.
+    * Orange for warnings.
+    * White for notices.
+    * Green for positive results.
+
 # 1. Prerequisites 📦
 
 Neovim `0.8.0+`
