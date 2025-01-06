@@ -1,28 +1,3 @@
-<p align="right">
-  <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="sponsor" />
-  <img src="https://img.shields.io/github/stars/diegoulloao/neofusion.nvim?color=ea6847&style=for-the-badge" />
-</p>
-
-<div align="center">
-    <h1>
-        <img src="https://i.ibb.co/87DhmZx/logo.jpg" width="110" />
-        <br />neofusion.nvim
-    </h1>
-</div>
-
-<p align="center"> 
-    <a href="#"><img alt="Made with Lua" src="https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua" style="vertical-align:center" /></a>
-</p>
-
-<p align="center">
-    Neofusion theme compatible with treesitter inspired by ellisonleao/gruvbox.nvim
-</p>
-
-<p align="center">
-    <img src="https://i.ibb.co/TYzmPyx/neofusion-nvim.png" alt="neofusion" />
-    👉 <a href="https://github.com/diegoulloao/neofusion.nvim/wiki/Showcase">Showcase</a> 👈
-</p>
-
 # 1. Prerequisites 📦
 
 Neovim `0.8.0+`
@@ -32,19 +7,19 @@ Neovim `0.8.0+`
 ### `lazy.nvim`
 
 ```lua
-{ "diegoulloao/neofusion.nvim", priority = 1000 , config = true, opts = ... }
+{ "jgregoire/neofission.nvim", priority = 1000 , config = true, opts = ... }
 ```
 
 ### `packer`
 
 ```lua
-use { "diegoulloao/neofusion.nvim" }
+use { "jgregoire/neofission.nvim" }
 ```
 
 ### `vim-plug`
 
 ```vim
-Plug 'diegoulloao/neofusion.nvim'
+Plug 'jgregoire/neofission.nvim'
 ```
 
 # 3. Basic usage ✨
@@ -53,14 +28,14 @@ Plug 'diegoulloao/neofusion.nvim'
 
 ```vim
 set background=dark
-colorscheme neofusion
+colorscheme neofission
 ```
 
 `init.lua`
 
 ```lua
 vim.o.background = "dark"
-vim.cmd([[ colorscheme neofusion ]])
+vim.cmd([[ colorscheme neofission ]])
 ```
 
 # 4. Configuration 💎
@@ -69,7 +44,7 @@ All settings are:
 
 ```lua
 -- Default options:
-require("neofusion").setup({
+require("neofission").setup({
   terminal_colors = true, -- add neovim terminal colors
   undercurl = true,
   underline = true,
@@ -93,7 +68,7 @@ require("neofusion").setup({
   transparent_mode = false,
 })
 
-vim.cmd([[ colorscheme neofusion ]])
+vim.cmd([[ colorscheme neofission ]])
 ```
 
 > [!IMPORTANT]
@@ -106,7 +81,7 @@ You can apply the built-in lualine theme like so:
 ```lua
 require("lualine").setup({
   options = {
-    theme = require("neofusion.lualine"),
+    theme = require("neofission.lualine"),
     -- rest,
   }
 })
@@ -119,14 +94,14 @@ require("lualine").setup({
 You can customize the palette colors like:
 
 ```lua
-require("neofusion").setup({
+require("neofission").setup({
   palette_overrides = {
     bright_green = "#ec30ac",
     -- rest,
   }
 })
 
-vim.cmd([[ colorscheme neofusion ]])
+vim.cmd([[ colorscheme neofission ]])
 ```
 
 ### b. Highlight groups
@@ -134,20 +109,20 @@ vim.cmd([[ colorscheme neofusion ]])
 For more flexibility, you can override a specific highlight group:
 
 ```lua
-require("neofusion").setup({
+require("neofission").setup({
   overrides = {
     SignColumn = { bg = "#ec30ac" },
     -- rest,
   }
 })
 
-vim.cmd([[ colorscheme neofusion ]])
+vim.cmd([[ colorscheme neofission ]])
 ```
 
 It also works with treesitter groups and lsp semantic highlight tokens:
 
 ```lua
-require("neofusion").setup({
+require("neofission").setup({
   overrides = {
     ["@lsp.type.method"] = { bg = "#ec30ac" },
     ["@comment.lua"] = { bg = "#000000" },
@@ -155,64 +130,64 @@ require("neofusion").setup({
   }
 })
 
-vim.cmd([[ colorscheme neofusion ]])
+vim.cmd([[ colorscheme neofission ]])
 ```
 
 For more details check [here](<https://neovim.io/doc/user/builtin.html#synIDattr()>)
 
 # 6. Advanced 🔥
 
-Get the nice looking from the captures by following the [wiki tutorial](https://github.com/diegoulloao/neofusion.nvim/wiki/Advanced-customization)
+Get the nice looking from the captures by following the [wiki tutorial](https://github.com/jgregoire/neofission.nvim/wiki/Advanced-customization)
 
 # 7. Ports ⭐
 
-### `neofusion.iterm`
+### `neofission.iterm`
 
-iTerm2 theme version. [Check it out!](https://github.com/diegoulloao/neofusion.iterm)
+iTerm2 theme version. [Check it out!](https://github.com/jgregoire/neofission.iterm)
 
-### `neofusion.alacritty`
+### `neofission.alacritty`
 
-Alacritty theme version. [Check it out!](https://github.com/diegoulloao/neofusion.alacritty)
+Alacritty theme version. [Check it out!](https://github.com/jgregoire/neofission.alacritty)
 
-### `neofusion.kitty`
+### `neofission.kitty`
 
-Kitty theme version. [Check it out!](https://github.com/diegoulloao/neofusion.kitty)
+Kitty theme version. [Check it out!](https://github.com/jgregoire/neofission.kitty)
 
-### `neofusion.wezterm`
+### `neofission.wezterm`
 
-WezTerm theme version. [Check it out!](https://github.com/diegoulloao/neofusion.wezterm)
+WezTerm theme version. [Check it out!](https://github.com/jgregoire/neofission.wezterm)
 
-### `neofusion.winterm`
+### `neofission.winterm`
 
-Windows Terminal theme version. [Check it out!](https://github.com/diegoulloao/neofusion.winterm)
+Windows Terminal theme version. [Check it out!](https://github.com/jgregoire/neofission.winterm)
 
-### `neofusion.bat`
+### `neofission.bat`
 
-Bat theme version [Check it out!](https://github.com/diegoulloao/neofusion.bat/)
+Bat theme version [Check it out!](https://github.com/jgregoire/neofission.bat/)
 
-### `neofusion.fzf`
+### `neofission.fzf`
 
-FZF theme version [Check it out!](https://github.com/diegoulloao/neofusion.fzf/)
+FZF theme version [Check it out!](https://github.com/jgregoire/neofission.fzf/)
 
-### `neofusion.k9s`
+### `neofission.k9s`
 
-K9s theme version. [Check it out!](https://github.com/diegoulloao/neofusion.k9s)
+K9s theme version. [Check it out!](https://github.com/jgregoire/neofission.k9s)
 
-### `neofusion.sp`
+### `neofission.sp`
 
-Spotify Player (Terminal) theme version [Check it out!](https://github.com/diegoulloao/neofusion.sp/)
+Spotify Player (Terminal) theme version [Check it out!](https://github.com/jgregoire/neofission.sp/)
 
-### `neofusion.posting`
+### `neofission.posting`
 
-Posting theme version. [Check it out!](https://github.com/diegoulloao/neofusion.posting)
+Posting theme version. [Check it out!](https://github.com/jgregoire/neofission.posting)
 
-### `neofusion.vscode`
+### `neofission.vscode`
 
-VS Code theme version [Check it out!](https://github.com/diegoulloao/neofusion.vscode/)
+VS Code theme version [Check it out!](https://github.com/jgregoire/neofission.vscode/)
 
-### `neofusion-wallpapers`
+### `neofission-wallpapers`
 
-Beautiful wallpapers that match your setup. [Check available resolutions](https://github.com/diegoulloao/neofusion-wallpapers?tab=readme-ov-file)
+Beautiful wallpapers that match your setup. [Check available resolutions](https://github.com/jgregoire/neofission-wallpapers?tab=readme-ov-file)
 
 # Sponsors ❤️
 
