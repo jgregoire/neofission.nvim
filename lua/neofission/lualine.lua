@@ -13,6 +13,9 @@ return {
     a = { bg = palette.light_green, fg = palette.dark0, gui = "bold" },
     b = { bg = palette.neutral_blue, fg = palette.bright_aqua },
     c = { bg = palette.dark2, fg = palette.bright_aqua },
+    x = { bg = palette.dark2, fg = palette.bright_aqua },
+    y = { bg = palette.neutral_orange, fg = palette.dark0 },
+    z = { bg = palette.light0, fg = palette.dark0, gui = "bold" },
   },
   visual = {
     a = { bg = palette.neutral_purple, fg = palette.dark0, gui = "bold" },
