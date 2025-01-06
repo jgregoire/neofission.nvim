@@ -1,1 +1,1 @@
-require("neofusion").load()
+require("neofission").load()
