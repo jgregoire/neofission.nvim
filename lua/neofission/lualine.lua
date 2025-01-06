@@ -10,7 +10,7 @@ return {
     z = { bg = palette.light0, fg = palette.dark0, gui = "bold" },
   },
   insert = {
-    a = { bg = palette.neutral_green, fg = palette.dark0, gui = "bold" },
+    a = { bg = palette.light_green, fg = palette.dark0, gui = "bold" },
     b = { bg = palette.neutral_blue, fg = palette.bright_aqua },
     c = { bg = palette.dark2, fg = palette.bright_aqua },
   },
