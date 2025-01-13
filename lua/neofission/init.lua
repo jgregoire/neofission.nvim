@@ -36,7 +36,7 @@
 --- @field inverse boolean?
 --- @field overrides table<string, HighlightDefinition>?
 --- @field palette_overrides table<string, string>?
----@ diagnostic enable:duplicate-doc-field
+---@diagnostic enable:duplicate-doc-field
 
 local neofission = {}
 
@@ -171,7 +171,7 @@ local function get_groups()
     neofissionOrangeBold = { fg = colors.orange, bold = config.bold },
     neofissionRedSign = config.transparent_mode and { fg = colors.bright_red, reverse = config.invert_signs }
         or { fg = colors.bright_red, bg = colors.bg0, reverse = config.invert_signs },
-    neofissionGreenSign = config.transparent_mode and { fg = colors.light_green, reverse = config.invert_signs }
+neofissionGreenSign = config.transparent_mode and { fg = colors.light_green, reverse = config.invert_signs }
         or { fg = colors.light_green, bg = colors.bg0, reverse = config.invert_signs },
     neofissionYellowSign = config.transparent_mode and { fg = colors.yellow, reverse = config.invert_signs }
         or { fg = colors.yellow, bg = colors.bg0, reverse = config.invert_signs },
@@ -308,7 +308,7 @@ local function get_groups()
     LspSignatureActiveParameter = { link = "Search" },
     gitcommitSelectedFile = { link = "neofissionGreen" },
     gitcommitDiscardedFile = { link = "neofissionRed" },
-    GitSignsAdd = { link = "neofissionGreen" },
+    GitSignsAdd = { link = "neofissionLightGreen" },
     GitSignsChange = { link = "neofissionAqua" },
     GitSignsDelete = { link = "neofissionRed" },
     NvimTreeSymlink = { fg = colors.neutral_aqua },
