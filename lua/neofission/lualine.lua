@@ -18,7 +18,7 @@ return {
         z = { bg = palette.light0, fg = palette.dark0, gui = "bold" },
     },
     visual = {
-        a = { bg = palette.neutral_purple, fg = palette.dark0, gui = "bold" },
+        a = { bg = palette.faded_purple, fg = palette.dark0, gui = "bold" },
         b = { bg = palette.neutral_blue, fg = palette.bright_aqua },
         c = { bg = palette.dark2, fg = palette.bright_aqua },
         x = { bg = palette.dark2, fg = palette.bright_aqua },
