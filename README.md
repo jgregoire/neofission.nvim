@@ -1,3 +1,5 @@
+![Neofission preview](Neofission.PNG "Neofission preview")
+
 # Goals:
 
 * Increase contrast, carefully.
