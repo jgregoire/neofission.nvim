@@ -1,3 +1,4 @@
+---@diagnostic disable:duplicate-doc-field
 --- @class HighlightDefinition
 --- @field fg string?
 --- @field bg string?
@@ -35,6 +36,7 @@
 --- @field inverse boolean?
 --- @field overrides table<string, HighlightDefinition>?
 --- @field palette_overrides table<string, string>?
+---@ diagnostic enable:duplicate-doc-field
 
 local neofission = {}
 
