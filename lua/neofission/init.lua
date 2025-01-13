@@ -105,6 +105,7 @@ local function get_colors()
     gray = palette.gray,
     light_green = palette.light_green,
     bright_red = palette.bright_red,
+    faded_purple = palette.faded_purple,
   }
 
   return color_groups

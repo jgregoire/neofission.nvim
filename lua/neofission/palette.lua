@@ -27,7 +27,7 @@ return {
   faded_green = "#5F6E29",
   faded_yellow = "#FA7A61",
   faded_blue = "#004752",
-  faded_purple = "#EC30AC",
+  faded_purple = "#A3008D",
   faded_aqua = "#5F6E29",
   faded_orange = "#FA7A61",
   dark_red = "#722529",
