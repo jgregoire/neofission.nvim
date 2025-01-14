@@ -2,8 +2,7 @@
 
 # Goals:
 
-* Increase contrast, carefully.
-* Add some high-contrast accents from existing colors.
+* Add some high-contrast accents derived from existing colors.
 * Add a nice green to be used sparingly.
 * Add one more color to be used sparingly. Perhaps plum.
 * Use consistent shades across colorschemes for different apps.
